@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+      
+        <property name="connection.url">
+            jdbc:mysql://localhost:3306/camisetas_aed?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC
+        </property>
+
+        
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+
+        
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+       
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+      
+        <mapping class="models.Camiseta"/>
+    </session-factory>
+</hibernate-configuration>
